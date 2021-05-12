@@ -5,7 +5,7 @@ import ZXYDIManager
 struct HotSwapApp: App {
   init() {
     ZXYDIManager.shared = .init(parentContainer: nil)
-    setupModulesAutoRegisterDI()
+    ZXYDIManager.shared?.setupModulesAutoRegisterDI()
   }
   var body: some Scene {
     WindowGroup {

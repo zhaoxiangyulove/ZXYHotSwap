@@ -4,7 +4,6 @@ PODS:
     - Swinject
     - ZXYModuleProtocols
   - ZXYModuleA (0.0.1):
-    - ZXYDIManager
     - ZXYModuleProtocols
   - ZXYModuleB (0.0.1):
     - ZXYDIManager
@@ -40,11 +39,11 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
   ZXYDIManager: 8b780ad9a9d45603870f4da1180774f44ca0fdcc
-  ZXYModuleA: 0820ae675b3a66ed57e0e516b3f28083245d47b7
+  ZXYModuleA: 20fd2cc0e527fbb30ac3f0fb847b288df12d967f
   ZXYModuleB: fe344fc2693da18bce781e516055f0239b3855f6
   ZXYModuleC: c77def45a07788ef08e06c23743c1a8efa8a3e81
   ZXYModuleProtocols: d69d7f83ea1eb759cec3fea84eeba195d1cb7317
 
-PODFILE CHECKSUM: 5949457dec614adc8372a622d8c9e5f76b97c6c9
+PODFILE CHECKSUM: 7f6933780b3942ee7bd454d84f4a5ae0d8155c3a
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.10.0.rc.1

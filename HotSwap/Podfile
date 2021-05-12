@@ -2,10 +2,10 @@
 source 'https://github.com/CocoaPods/Specs.git'
 # platform :ios, '13.0'
 
-$white_array = ['ZXYModuleA', 'ZXYModuleB', 'ZXYModuleC']
+$swap_white_array = ['ZXYModuleA', 'ZXYModuleB', 'ZXYModuleC']
 
-def zxy_pod(name, param1 = '', param2 = {})
-  return if !$white_array.include? name
+def zxy_swap_pod(name, param1 = '', param2 = {})
+  return if !$swap_white_array.include? name
   tag = ''
   options = Hash.new
   if param1.is_a? String
@@ -23,7 +23,7 @@ end
 
 def import_contents()
   content = "import ZXYDIManager\nimport ZXYModuleProtocols\n"
-  $white_array.each do |key|
+  $swap_white_array.each do |key|
     content << "import #{key}\n"
   end
   return content
@@ -31,8 +31,10 @@ end
 
 def func_content()
   content = ""
-  $white_array.each do |key|
-      content << "  #{key}Imp.autoRegister()\n"
+  $swap_white_array.each do |key|
+      content << "  container.register(#{key}.self) { _ in
+      #{key}Imp()
+    }\n"
   end
   return content
 end
@@ -53,9 +55,9 @@ def auto_register()
 end
 
 def commonPods
-  zxy_pod 'ZXYModuleA', :path => './Modules/ZXYModuleA'
-  zxy_pod 'ZXYModuleB', :path => './Modules/ZXYModuleB'
-  zxy_pod 'ZXYModuleC', :path => './Modules/ZXYModuleC'
+  zxy_swap_pod 'ZXYModuleA', :path => './Modules/ZXYModuleA'
+  zxy_swap_pod 'ZXYModuleB', :path => './Modules/ZXYModuleB'
+  zxy_swap_pod 'ZXYModuleC', :path => './Modules/ZXYModuleC'
   pod 'ZXYModuleProtocols', :path => './Modules/ZXYModuleProtocols'
   pod 'ZXYDIManager', :path => './Modules/ZXYDIManager'
 end
