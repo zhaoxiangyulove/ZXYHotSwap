@@ -1,0 +1,71 @@
+# Uncomment the next line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
+# platform :ios, '13.0'
+
+$white_array = ['ZXYModuleA', 'ZXYModuleB', 'ZXYModuleC']
+
+def zxy_pod(name, param1 = '', param2 = {})
+  return if !$white_array.include? name
+  tag = ''
+  options = Hash.new
+  if param1.is_a? String
+    tag = param1
+  elsif param1.is_a? Hash
+    options = param1
+  end
+  options = options.merge param2
+  if tag.empty?
+    pod name, options
+  else
+    pod name, tag, options
+  end
+end
+
+def import_contents()
+  content = "import ZXYDIManager\nimport ZXYModuleProtocols\n"
+  $white_array.each do |key|
+    content << "import #{key}\n"
+  end
+  return content
+end
+
+def func_content()
+  content = ""
+  $white_array.each do |key|
+      content << "  #{key}Imp.autoRegister()\n"
+  end
+  return content
+end
+
+def auto_register()
+  path = File.join(File.dirname(__FILE__), './Shared/DIHotSwap.swift')
+  content = File.new path, 'w'
+  icontent = import_contents()
+  content << icontent
+  content << "\nextension ZXYDIManager {\n"
+  content << "  func setupModulesAutoRegisterDI() {
+    // ⚠️⚠️ This file was automatically generated and should not be edited. ⚠️⚠️\n"
+  content << func_content()
+  content << "    // ⚠️⚠️ This file was automatically generated and should not be edited. ⚠️⚠️\n"
+  content << "  }\n"
+  content << " }\n"
+  content.close
+end
+
+def commonPods
+  zxy_pod 'ZXYModuleA', :path => './Modules/ZXYModuleA'
+  zxy_pod 'ZXYModuleB', :path => './Modules/ZXYModuleB'
+  zxy_pod 'ZXYModuleC', :path => './Modules/ZXYModuleC'
+  pod 'ZXYModuleProtocols', :path => './Modules/ZXYModuleProtocols'
+  pod 'ZXYDIManager', :path => './Modules/ZXYDIManager'
+end
+
+target 'HotSwap (iOS)' do
+  use_frameworks!
+  commonPods
+  auto_register
+end
+
+target 'HotSwap (macOS)' do
+  use_frameworks!
+end

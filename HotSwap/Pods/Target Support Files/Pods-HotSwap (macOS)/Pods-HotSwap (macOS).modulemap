@@ -1,0 +1,6 @@
+framework module Pods_HotSwap__macOS_ {
+  umbrella header "Pods-HotSwap (macOS)-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module ZXYModuleProtocols {
+  umbrella header "ZXYModuleProtocols-umbrella.h"
+
+  export *
+  module * { export * }
+}

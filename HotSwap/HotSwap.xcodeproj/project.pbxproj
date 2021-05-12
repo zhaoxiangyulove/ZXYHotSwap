@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A20C7774264B725000B474D6 /* HotSwapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C7761264B724F00B474D6 /* HotSwapApp.swift */; };
+		A20C7775264B725000B474D6 /* HotSwapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C7761264B724F00B474D6 /* HotSwapApp.swift */; };
+		A20C7776264B725000B474D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C7762264B724F00B474D6 /* ContentView.swift */; };
+		A20C7777264B725000B474D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C7762264B724F00B474D6 /* ContentView.swift */; };
+		A20C7778264B725000B474D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20C7763264B725000B474D6 /* Assets.xcassets */; };
+		A20C7779264B725000B474D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20C7763264B725000B474D6 /* Assets.xcassets */; };
+		A20C7908264B974400B474D6 /* DIHotSwap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C7907264B974300B474D6 /* DIHotSwap.swift */; };
+		A20C7909264B974400B474D6 /* DIHotSwap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C7907264B974300B474D6 /* DIHotSwap.swift */; };
+		B1F73BFC16784F671641CFEB /* Pods_HotSwap__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFEFF576F4E27D767C8DE92B /* Pods_HotSwap__macOS_.framework */; };
+		F62B6398C02A3EA24D8FF839 /* Pods_HotSwap__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A808BB1AD58BE2825B0C2527 /* Pods_HotSwap__iOS_.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		686D2A3465A49F14201E9C02 /* Pods-HotSwap (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSwap (iOS).release.xcconfig"; path = "Target Support Files/Pods-HotSwap (iOS)/Pods-HotSwap (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		8B5C29D4D15C7BC28320A19A /* Pods-HotSwap (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSwap (macOS).release.xcconfig"; path = "Target Support Files/Pods-HotSwap (macOS)/Pods-HotSwap (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		96B9565FCBF6EE10D86CC8FC /* Pods-HotSwap (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSwap (macOS).debug.xcconfig"; path = "Target Support Files/Pods-HotSwap (macOS)/Pods-HotSwap (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		A20C7761264B724F00B474D6 /* HotSwapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotSwapApp.swift; sourceTree = "<group>"; };
+		A20C7762264B724F00B474D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A20C7763264B725000B474D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A20C7768264B725000B474D6 /* HotSwap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotSwap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20C776B264B725000B474D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20C7770264B725000B474D6 /* HotSwap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotSwap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20C7772264B725000B474D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20C7773264B725000B474D6 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		A20C7907264B974300B474D6 /* DIHotSwap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIHotSwap.swift; sourceTree = "<group>"; };
+		A808BB1AD58BE2825B0C2527 /* Pods_HotSwap__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotSwap__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFEFF576F4E27D767C8DE92B /* Pods_HotSwap__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotSwap__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA717D6D4C7F41886EF1316 /* Pods-HotSwap (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSwap (iOS).debug.xcconfig"; path = "Target Support Files/Pods-HotSwap (iOS)/Pods-HotSwap (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A20C7765264B725000B474D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F62B6398C02A3EA24D8FF839 /* Pods_HotSwap__iOS_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A20C776D264B725000B474D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F73BFC16784F671641CFEB /* Pods_HotSwap__macOS_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DD02E25962C1A2CD4B98749 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCA717D6D4C7F41886EF1316 /* Pods-HotSwap (iOS).debug.xcconfig */,
+				686D2A3465A49F14201E9C02 /* Pods-HotSwap (iOS).release.xcconfig */,
+				96B9565FCBF6EE10D86CC8FC /* Pods-HotSwap (macOS).debug.xcconfig */,
+				8B5C29D4D15C7BC28320A19A /* Pods-HotSwap (macOS).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A20C775B264B724E00B474D6 = {
+			isa = PBXGroup;
+			children = (
+				A20C7760264B724F00B474D6 /* Shared */,
+				A20C776A264B725000B474D6 /* iOS */,
+				A20C7771264B725000B474D6 /* macOS */,
+				A20C7769264B725000B474D6 /* Products */,
+				2DD02E25962C1A2CD4B98749 /* Pods */,
+				E11B7909FD6052C4002613D2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A20C7760264B724F00B474D6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A20C7761264B724F00B474D6 /* HotSwapApp.swift */,
+				A20C7762264B724F00B474D6 /* ContentView.swift */,
+				A20C7763264B725000B474D6 /* Assets.xcassets */,
+				A20C7907264B974300B474D6 /* DIHotSwap.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A20C7769264B725000B474D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20C7768264B725000B474D6 /* HotSwap.app */,
+				A20C7770264B725000B474D6 /* HotSwap.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A20C776A264B725000B474D6 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A20C776B264B725000B474D6 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		A20C7771264B725000B474D6 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A20C7772264B725000B474D6 /* Info.plist */,
+				A20C7773264B725000B474D6 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		E11B7909FD6052C4002613D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A808BB1AD58BE2825B0C2527 /* Pods_HotSwap__iOS_.framework */,
+				DFEFF576F4E27D767C8DE92B /* Pods_HotSwap__macOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A20C7767264B725000B474D6 /* HotSwap (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A20C777C264B725000B474D6 /* Build configuration list for PBXNativeTarget "HotSwap (iOS)" */;
+			buildPhases = (
+				3E1DE11819A1362CCB69626B /* [CP] Check Pods Manifest.lock */,
+				A20C7764264B725000B474D6 /* Sources */,
+				A20C7765264B725000B474D6 /* Frameworks */,
+				A20C7766264B725000B474D6 /* Resources */,
+				DA89A199801BB92158B73ECD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HotSwap (iOS)";
+			productName = "HotSwap (iOS)";
+			productReference = A20C7768264B725000B474D6 /* HotSwap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A20C776F264B725000B474D6 /* HotSwap (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A20C777F264B725000B474D6 /* Build configuration list for PBXNativeTarget "HotSwap (macOS)" */;
+			buildPhases = (
+				F7208E9A74662DEE528A5C6D /* [CP] Check Pods Manifest.lock */,
+				A20C776C264B725000B474D6 /* Sources */,
+				A20C776D264B725000B474D6 /* Frameworks */,
+				A20C776E264B725000B474D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HotSwap (macOS)";
+			productName = "HotSwap (macOS)";
+			productReference = A20C7770264B725000B474D6 /* HotSwap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A20C775C264B724E00B474D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					A20C7767264B725000B474D6 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					A20C776F264B725000B474D6 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = A20C775F264B724E00B474D6 /* Build configuration list for PBXProject "HotSwap" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A20C775B264B724E00B474D6;
+			productRefGroup = A20C7769264B725000B474D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A20C7767264B725000B474D6 /* HotSwap (iOS) */,
+				A20C776F264B725000B474D6 /* HotSwap (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A20C7766264B725000B474D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20C7778264B725000B474D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A20C776E264B725000B474D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20C7779264B725000B474D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E1DE11819A1362CCB69626B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HotSwap (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA89A199801BB92158B73ECD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotSwap (iOS)/Pods-HotSwap (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotSwap (iOS)/Pods-HotSwap (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HotSwap (iOS)/Pods-HotSwap (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7208E9A74662DEE528A5C6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HotSwap (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A20C7764264B725000B474D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20C7908264B974400B474D6 /* DIHotSwap.swift in Sources */,
+				A20C7776264B725000B474D6 /* ContentView.swift in Sources */,
+				A20C7774264B725000B474D6 /* HotSwapApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A20C776C264B725000B474D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20C7909264B974400B474D6 /* DIHotSwap.swift in Sources */,
+				A20C7777264B725000B474D6 /* ContentView.swift in Sources */,
+				A20C7775264B725000B474D6 /* HotSwapApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A20C777A264B725000B474D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A20C777B264B725000B474D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A20C777D264B725000B474D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCA717D6D4C7F41886EF1316 /* Pods-HotSwap (iOS).debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P23UWXMRAB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zxy.com.HotSwap;
+				PRODUCT_NAME = HotSwap;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A20C777E264B725000B474D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 686D2A3465A49F14201E9C02 /* Pods-HotSwap (iOS).release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P23UWXMRAB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zxy.com.HotSwap;
+				PRODUCT_NAME = HotSwap;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A20C7780264B725000B474D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96B9565FCBF6EE10D86CC8FC /* Pods-HotSwap (macOS).debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P23UWXMRAB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zxy.com.HotSwap;
+				PRODUCT_NAME = HotSwap;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A20C7781264B725000B474D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B5C29D4D15C7BC28320A19A /* Pods-HotSwap (macOS).release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P23UWXMRAB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zxy.com.HotSwap;
+				PRODUCT_NAME = HotSwap;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A20C775F264B724E00B474D6 /* Build configuration list for PBXProject "HotSwap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A20C777A264B725000B474D6 /* Debug */,
+				A20C777B264B725000B474D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A20C777C264B725000B474D6 /* Build configuration list for PBXNativeTarget "HotSwap (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A20C777D264B725000B474D6 /* Debug */,
+				A20C777E264B725000B474D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A20C777F264B725000B474D6 /* Build configuration list for PBXNativeTarget "HotSwap (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A20C7780264B725000B474D6 /* Debug */,
+				A20C7781264B725000B474D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A20C775C264B724E00B474D6 /* Project object */;
+}
