@@ -177,14 +177,12 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZXYDIManager/ZXYDIManager.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ZXYModuleB/ZXYModuleB.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZXYModuleC/ZXYModuleC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZXYModuleProtocols/ZXYModuleProtocols.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZXYDIManager/ZXYDIManager.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ZXYModuleB/ZXYModuleB.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZXYModuleC/ZXYModuleC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZXYModuleProtocols/ZXYModuleProtocols.framework"
 fi

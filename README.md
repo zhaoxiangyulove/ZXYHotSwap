@@ -1,6 +1,6 @@
 # ZXYHotSwap - 基于 DI 实现组件化热插拔
 
-简单实现了下组件化热插拔，主要使用 **DI** 解耦。**pod install** 时根据白名单生成自动注册文件 **DIHotSwap.swift**。
+简单实现了下组件化热插拔，主要使用 **DI** 解耦。
 
 #### Demo 结构
 
@@ -55,29 +55,41 @@ ModuleC 通过 DI 获取 ModuleA、ModuleB 的实现(**Optional**)，当 ModuleA
 
 ##### register
 
-支持热插拔的组件是通过脚本来进行 **register** 的，脚本在 **Podfile** 中，有兴趣的可自己看下，生成 **DIHotSwap.swift**，代码如下：
+支持热插拔的组件是在 **DIHotSwap.swift** 来进行 **register** 的，通过 **canImport()** 来进行  **import**，代码如下：
 
 ```swift
 import ZXYDIManager
 import ZXYModuleProtocols
+#if canImport(ZXYModuleA)
+import ZXYModuleA
+#endif
+#if canImport(ZXYModuleB)
 import ZXYModuleB
+#endif
+#if canImport(ZXYModuleC)
 import ZXYModuleC
+#endif
 
 extension ZXYDIManager {
   func setupModulesAutoRegisterDI() {
-    // ⚠️⚠️ This file was automatically generated and should not be edited. ⚠️⚠️
-  container.register(ZXYModuleB.self) { _ in
+    #if canImport(ZXYModuleA)
+    container.register(ZXYModuleA.self) { _ in
+      ZXYModuleAImp()
+    }
+    #endif
+    #if canImport(ZXYModuleB)
+    container.register(ZXYModuleB.self) { _ in
       ZXYModuleBImp()
     }
-  container.register(ZXYModuleC.self) { _ in
+    #endif
+    #if canImport(ZXYModuleC)
+    container.register(ZXYModuleC.self) { _ in
       ZXYModuleCImp()
     }
-    // ⚠️⚠️ This file was automatically generated and should not be edited. ⚠️⚠️
+    #endif
   }
- }
+}
 ```
-
-当删除 **ModuleA** 后，这个函数里也不会注册 **ModuleA** 的实现。
 
 ##### resolve
 
