@@ -1,6 +1,0 @@
-framework module ZXYModuleA {
-  umbrella header "ZXYModuleA-umbrella.h"
-
-  export *
-  module * { export * }
-}

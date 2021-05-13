@@ -2,7 +2,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 # platform :ios, '13.0'
 
-$swap_white_array = ['ZXYModuleA', 'ZXYModuleB', 'ZXYModuleC']
+$swap_white_array = []
 
 def zxy_swap_pod(name, param1 = '', param2 = {})
   return if !$swap_white_array.include? name
