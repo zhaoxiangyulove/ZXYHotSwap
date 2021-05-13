@@ -81,7 +81,7 @@ extension ZXYDIManager {
 
 ##### resolve
 
-通过 Swift 特性 **@propertyWrapper**，实现 **Injected **语法糖。
+通过 Swift 特性 **@propertyWrapper**，实现 **Injected** 语法糖。
 
 ```swift
 @propertyWrapper
