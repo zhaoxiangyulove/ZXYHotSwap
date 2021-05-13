@@ -4,5 +4,10 @@
 
 #### Demo 结构
 
-![image-20210513103744046](/Users/zhaoxiangyu/Library/Application Support/typora-user-images/image-20210513103744046.png)
+![image-20210513121116138](/Users/zhaoxiangyu/Library/Application Support/typora-user-images/image-20210513121116138.png)
 
+箭头是各组件之间的依赖关系，所有的 **Module 协议**都放在 **ZXYModuleProtocols** 中。
+
+#### 实现
+
+ModuleC 通过 DI 获取 ModuleA、ModuleB 的实现，是一个 Optional 的值，当 ModuleA 的实现被拔掉时，ModuleC 获取是 nil，ModuleA 相关的功能不再 work，但无需进行代码修改。
