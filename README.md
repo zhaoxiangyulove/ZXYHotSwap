@@ -4,10 +4,24 @@
 
 #### Demo 结构
 
-![image-20210513121116138](/Users/zhaoxiangyu/Library/Application Support/typora-user-images/image-20210513121116138.png)
+![image-20210513121116138](https://github.com/zhaoxiangyulove/ZXYHotSwap/blob/main/Resource/image-20210513121116138.png?raw=true)
 
 箭头是各组件之间的依赖关系，所有的 **Module 协议**都放在 **ZXYModuleProtocols** 中。
 
 #### 实现
 
-ModuleC 通过 DI 获取 ModuleA、ModuleB 的实现，是一个 Optional 的值，当 ModuleA 的实现被拔掉时，ModuleC 获取是 nil，ModuleA 相关的功能不再 work，但无需进行代码修改。
+通过修改 Podfile 中 swap_white_array 的内容来控制插拔的组件，在 swapPods 中声明。
+
+```ruby
+def swapPods
+  zxy_swap_pod 'ZXYModuleA', :path => './Modules/ZXYModuleA'
+  zxy_swap_pod 'ZXYModuleB', :path => './Modules/ZXYModuleB'
+  zxy_swap_pod 'ZXYModuleC', :path => './Modules/ZXYModuleC'
+end
+
+```
+
+ModuleC 通过 DI 获取 ModuleA、ModuleB 的实现(Optional)，当 ModuleA 的实现被拔掉时，自动修改注册文件，ModuleC 获取是 nil，壳工程获取是 nil，ModuleA 相关的功能不再 work，但无需进行代码修改。
+
+运行效果：
+

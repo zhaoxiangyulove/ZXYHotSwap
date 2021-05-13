@@ -3,10 +3,18 @@ PODS:
   - ZXYDIManager (0.0.1):
     - Swinject
     - ZXYModuleProtocols
+  - ZXYModuleB (0.0.1):
+    - ZXYDIManager
+    - ZXYModuleProtocols
+  - ZXYModuleC (0.0.1):
+    - ZXYDIManager
+    - ZXYModuleProtocols
   - ZXYModuleProtocols (0.0.1)
 
 DEPENDENCIES:
   - ZXYDIManager (from `./Modules/ZXYDIManager`)
+  - ZXYModuleB (from `./Modules/ZXYModuleB`)
+  - ZXYModuleC (from `./Modules/ZXYModuleC`)
   - ZXYModuleProtocols (from `./Modules/ZXYModuleProtocols`)
 
 SPEC REPOS:
@@ -16,14 +24,20 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   ZXYDIManager:
     :path: "./Modules/ZXYDIManager"
+  ZXYModuleB:
+    :path: "./Modules/ZXYModuleB"
+  ZXYModuleC:
+    :path: "./Modules/ZXYModuleC"
   ZXYModuleProtocols:
     :path: "./Modules/ZXYModuleProtocols"
 
 SPEC CHECKSUMS:
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
   ZXYDIManager: 8b780ad9a9d45603870f4da1180774f44ca0fdcc
+  ZXYModuleB: fe344fc2693da18bce781e516055f0239b3855f6
+  ZXYModuleC: c77def45a07788ef08e06c23743c1a8efa8a3e81
   ZXYModuleProtocols: d69d7f83ea1eb759cec3fea84eeba195d1cb7317
 
-PODFILE CHECKSUM: 276148345c5ce03200dc81397a12cade425a1364
+PODFILE CHECKSUM: 09836b07a805a6b48341a9438277f7bde70649ca
 
 COCOAPODS: 1.10.1

@@ -2,7 +2,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 # platform :ios, '13.0'
 
-$swap_white_array = []
+$swap_white_array = ["ZXYModuleB", "ZXYModuleC"]
 
 def zxy_swap_pod(name, param1 = '', param2 = {})
   return if !$swap_white_array.include? name
@@ -55,16 +55,20 @@ def auto_register()
 end
 
 def commonPods
+  pod 'ZXYModuleProtocols', :path => './Modules/ZXYModuleProtocols'
+  pod 'ZXYDIManager', :path => './Modules/ZXYDIManager'
+end
+
+def swapPods
   zxy_swap_pod 'ZXYModuleA', :path => './Modules/ZXYModuleA'
   zxy_swap_pod 'ZXYModuleB', :path => './Modules/ZXYModuleB'
   zxy_swap_pod 'ZXYModuleC', :path => './Modules/ZXYModuleC'
-  pod 'ZXYModuleProtocols', :path => './Modules/ZXYModuleProtocols'
-  pod 'ZXYDIManager', :path => './Modules/ZXYDIManager'
 end
 
 target 'HotSwap (iOS)' do
   use_frameworks!
   commonPods
+  swapPods
   auto_register
 end
 
