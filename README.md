@@ -4,7 +4,7 @@
 
 #### Demo 结构
 
-![image-20210513135644022](/Users/zhaoxiangyu/Library/Application Support/typora-user-images/image-20210513135644022.png)
+![image-20210513135644022](https://github.com/zhaoxiangyulove/ZXYHotSwap/blob/main/Resource/image-20210513135644022.png?raw=true)
 
 箭头是各组件之间的依赖关系(咖啡色表示并非实际依赖，是通过 DI 获取了协议对应的实现)，所有的 **Module 协议**都放在 **ZXYModuleProtocols** 中。
 
