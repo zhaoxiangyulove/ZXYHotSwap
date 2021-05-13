@@ -22,5 +22,4 @@ extension ZXYModuleCImp: ZXYModuleC {
     }
     print("[Module C] ModuleC's instance work")
   }
-  
 }
