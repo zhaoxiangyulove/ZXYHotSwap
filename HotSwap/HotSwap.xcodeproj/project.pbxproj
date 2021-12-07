@@ -19,6 +19,16 @@
 		F62B6398C02A3EA24D8FF839 /* Pods_HotSwap__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A808BB1AD58BE2825B0C2527 /* Pods_HotSwap__iOS_.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A2301CE2275F756D0055FCB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A20C775C264B724E00B474D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A20C7767264B725000B474D6;
+			remoteInfo = "HotSwap (iOS)";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		686D2A3465A49F14201E9C02 /* Pods-HotSwap (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSwap (iOS).release.xcconfig"; path = "Target Support Files/Pods-HotSwap (iOS)/Pods-HotSwap (iOS).release.xcconfig"; sourceTree = "<group>"; };
 		8B5C29D4D15C7BC28320A19A /* Pods-HotSwap (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSwap (macOS).release.xcconfig"; path = "Target Support Files/Pods-HotSwap (macOS)/Pods-HotSwap (macOS).release.xcconfig"; sourceTree = "<group>"; };
@@ -32,6 +42,8 @@
 		A20C7772264B725000B474D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A20C7773264B725000B474D6 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		A20C7907264B974300B474D6 /* DIHotSwap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIHotSwap.swift; sourceTree = "<group>"; };
+		A2301CDD275F756C0055FCB9 /* HotSwapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotSwapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2301CE1275F756C0055FCB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A808BB1AD58BE2825B0C2527 /* Pods_HotSwap__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotSwap__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFEFF576F4E27D767C8DE92B /* Pods_HotSwap__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotSwap__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA717D6D4C7F41886EF1316 /* Pods-HotSwap (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSwap (iOS).debug.xcconfig"; path = "Target Support Files/Pods-HotSwap (iOS)/Pods-HotSwap (iOS).debug.xcconfig"; sourceTree = "<group>"; };
@@ -51,6 +63,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1F73BFC16784F671641CFEB /* Pods_HotSwap__macOS_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2301CDA275F756C0055FCB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +93,7 @@
 				A20C7760264B724F00B474D6 /* Shared */,
 				A20C776A264B725000B474D6 /* iOS */,
 				A20C7771264B725000B474D6 /* macOS */,
+				A2301CDE275F756C0055FCB9 /* HotSwapTests */,
 				A20C7769264B725000B474D6 /* Products */,
 				2DD02E25962C1A2CD4B98749 /* Pods */,
 				E11B7909FD6052C4002613D2 /* Frameworks */,
@@ -96,6 +116,7 @@
 			children = (
 				A20C7768264B725000B474D6 /* HotSwap.app */,
 				A20C7770264B725000B474D6 /* HotSwap.app */,
+				A2301CDD275F756C0055FCB9 /* HotSwapTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +136,14 @@
 				A20C7773264B725000B474D6 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		A2301CDE275F756C0055FCB9 /* HotSwapTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2301CE1275F756C0055FCB9 /* Info.plist */,
+			);
+			path = HotSwapTests;
 			sourceTree = "<group>";
 		};
 		E11B7909FD6052C4002613D2 /* Frameworks */ = {
@@ -166,13 +195,31 @@
 			productReference = A20C7770264B725000B474D6 /* HotSwap.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A2301CDC275F756C0055FCB9 /* HotSwapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2301CE6275F756D0055FCB9 /* Build configuration list for PBXNativeTarget "HotSwapTests" */;
+			buildPhases = (
+				A2301CD9275F756C0055FCB9 /* Sources */,
+				A2301CDA275F756C0055FCB9 /* Frameworks */,
+				A2301CDB275F756C0055FCB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2301CE3275F756D0055FCB9 /* PBXTargetDependency */,
+			);
+			name = HotSwapTests;
+			productName = HotSwapTests;
+			productReference = A2301CDD275F756C0055FCB9 /* HotSwapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A20C775C264B724E00B474D6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					A20C7767264B725000B474D6 = {
@@ -180,6 +227,10 @@
 					};
 					A20C776F264B725000B474D6 = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					A2301CDC275F756C0055FCB9 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = A20C7767264B725000B474D6;
 					};
 				};
 			};
@@ -198,6 +249,7 @@
 			targets = (
 				A20C7767264B725000B474D6 /* HotSwap (iOS) */,
 				A20C776F264B725000B474D6 /* HotSwap (macOS) */,
+				A2301CDC275F756C0055FCB9 /* HotSwapTests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,6 +268,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A20C7779264B725000B474D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2301CDB275F756C0055FCB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +365,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A2301CD9275F756C0055FCB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2301CE3275F756D0055FCB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A20C7767264B725000B474D6 /* HotSwap (iOS) */;
+			targetProxy = A2301CE2275F756D0055FCB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A20C777A264B725000B474D6 /* Debug */ = {
@@ -517,6 +591,51 @@
 			};
 			name = Release;
 		};
+		A2301CE4275F756D0055FCB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P23UWXMRAB;
+				INFOPLIST_FILE = HotSwapTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = icandy.zxy.com.HotSwapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HotSwap.app/HotSwap";
+			};
+			name = Debug;
+		};
+		A2301CE5275F756D0055FCB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P23UWXMRAB;
+				INFOPLIST_FILE = HotSwapTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = icandy.zxy.com.HotSwapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HotSwap.app/HotSwap";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -543,6 +662,15 @@
 			buildConfigurations = (
 				A20C7780264B725000B474D6 /* Debug */,
 				A20C7781264B725000B474D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2301CE6275F756D0055FCB9 /* Build configuration list for PBXNativeTarget "HotSwapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2301CE4275F756D0055FCB9 /* Debug */,
+				A2301CE5275F756D0055FCB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
