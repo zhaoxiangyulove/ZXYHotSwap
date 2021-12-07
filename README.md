@@ -1,10 +1,14 @@
-# 基于 DI 实现组件化热插拔 Demo
+# 组件化架构
 
-简单实现了下组件化热插拔 Demo，主要使用 **DI** 完成解耦和热插拔。
+#### Todo
 
-demo 地址：https://github.com/zhaoxiangyulove/ZXYHotSwap
+- [x] 接入 DI ，控制 module 的生命周期。
+- [x] 组件热插拔。
+- [ ] TDD 和 Lint 配置。
+- [ ] 接入 Router，实现 module 通信。
+- [ ] 插拔 Module，自动添加 Mock Module，符合测试预期。
 
-#### Demo 结构
+#### 结构
 
 ![image-20210513135644022](https://github.com/zhaoxiangyulove/ZXYHotSwap/blob/main/Resource/image-20210513135644022.png?raw=true)
 
