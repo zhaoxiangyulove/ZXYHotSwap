@@ -175,16 +175,16 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ZXYDIManager/ZXYDIManager.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ZXYModuleC/ZXYModuleC.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ZXYModuleProtocols/ZXYModuleProtocols.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Swinject-iOS14.0/Swinject.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ZXYDIManager-iOS14.0/ZXYDIManager.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ZXYModuleC-iOS14.0/ZXYModuleC.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ZXYModuleProtocols-iOS14.0/ZXYModuleProtocols.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ZXYDIManager/ZXYDIManager.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ZXYModuleC/ZXYModuleC.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ZXYModuleProtocols/ZXYModuleProtocols.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Swinject-iOS14.0/Swinject.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ZXYDIManager-iOS14.0/ZXYDIManager.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ZXYModuleC-iOS14.0/ZXYModuleC.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ZXYModuleProtocols-iOS14.0/ZXYModuleProtocols.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

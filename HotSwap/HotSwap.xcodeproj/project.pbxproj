@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05BEE83064A2F48BA7D83EB3 /* Pods_HotSwapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3833D30361959B17F34FEC0D /* Pods_HotSwapTests.framework */; };
 		A20C7774264B725000B474D6 /* HotSwapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C7761264B724F00B474D6 /* HotSwapApp.swift */; };
 		A20C7775264B725000B474D6 /* HotSwapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C7761264B724F00B474D6 /* HotSwapApp.swift */; };
 		A20C7776264B725000B474D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C7762264B724F00B474D6 /* ContentView.swift */; };
@@ -15,6 +16,7 @@
 		A20C7779264B725000B474D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20C7763264B725000B474D6 /* Assets.xcassets */; };
 		A20C7908264B974400B474D6 /* DIHotSwap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C7907264B974300B474D6 /* DIHotSwap.swift */; };
 		A20C7909264B974400B474D6 /* DIHotSwap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C7907264B974300B474D6 /* DIHotSwap.swift */; };
+		A2301CED27609B160055FCB9 /* HotSwapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2301CEC27609B160055FCB9 /* HotSwapTests.swift */; };
 		B1F73BFC16784F671641CFEB /* Pods_HotSwap__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFEFF576F4E27D767C8DE92B /* Pods_HotSwap__macOS_.framework */; };
 		F62B6398C02A3EA24D8FF839 /* Pods_HotSwap__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A808BB1AD58BE2825B0C2527 /* Pods_HotSwap__iOS_.framework */; };
 /* End PBXBuildFile section */
@@ -30,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3833D30361959B17F34FEC0D /* Pods_HotSwapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotSwapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		686D2A3465A49F14201E9C02 /* Pods-HotSwap (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSwap (iOS).release.xcconfig"; path = "Target Support Files/Pods-HotSwap (iOS)/Pods-HotSwap (iOS).release.xcconfig"; sourceTree = "<group>"; };
 		8B5C29D4D15C7BC28320A19A /* Pods-HotSwap (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSwap (macOS).release.xcconfig"; path = "Target Support Files/Pods-HotSwap (macOS)/Pods-HotSwap (macOS).release.xcconfig"; sourceTree = "<group>"; };
 		96B9565FCBF6EE10D86CC8FC /* Pods-HotSwap (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSwap (macOS).debug.xcconfig"; path = "Target Support Files/Pods-HotSwap (macOS)/Pods-HotSwap (macOS).debug.xcconfig"; sourceTree = "<group>"; };
@@ -44,8 +47,11 @@
 		A20C7907264B974300B474D6 /* DIHotSwap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIHotSwap.swift; sourceTree = "<group>"; };
 		A2301CDD275F756C0055FCB9 /* HotSwapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotSwapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2301CE1275F756C0055FCB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2301CEC27609B160055FCB9 /* HotSwapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotSwapTests.swift; sourceTree = "<group>"; };
 		A808BB1AD58BE2825B0C2527 /* Pods_HotSwap__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotSwap__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFEFF576F4E27D767C8DE92B /* Pods_HotSwap__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotSwap__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0E0DF86312508E1263E292C /* Pods-HotSwapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSwapTests.release.xcconfig"; path = "Target Support Files/Pods-HotSwapTests/Pods-HotSwapTests.release.xcconfig"; sourceTree = "<group>"; };
+		F9B8DBC8A3CCAEEA177BB312 /* Pods-HotSwapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSwapTests.debug.xcconfig"; path = "Target Support Files/Pods-HotSwapTests/Pods-HotSwapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FCA717D6D4C7F41886EF1316 /* Pods-HotSwap (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSwap (iOS).debug.xcconfig"; path = "Target Support Files/Pods-HotSwap (iOS)/Pods-HotSwap (iOS).debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05BEE83064A2F48BA7D83EB3 /* Pods_HotSwapTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +90,8 @@
 				686D2A3465A49F14201E9C02 /* Pods-HotSwap (iOS).release.xcconfig */,
 				96B9565FCBF6EE10D86CC8FC /* Pods-HotSwap (macOS).debug.xcconfig */,
 				8B5C29D4D15C7BC28320A19A /* Pods-HotSwap (macOS).release.xcconfig */,
+				F9B8DBC8A3CCAEEA177BB312 /* Pods-HotSwapTests.debug.xcconfig */,
+				F0E0DF86312508E1263E292C /* Pods-HotSwapTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -141,9 +150,26 @@
 		A2301CDE275F756C0055FCB9 /* HotSwapTests */ = {
 			isa = PBXGroup;
 			children = (
+				A2301CE8276099DE0055FCB9 /* Router */,
+				A2301CE7276099C40055FCB9 /* HotSwap */,
 				A2301CE1275F756C0055FCB9 /* Info.plist */,
 			);
 			path = HotSwapTests;
+			sourceTree = "<group>";
+		};
+		A2301CE7276099C40055FCB9 /* HotSwap */ = {
+			isa = PBXGroup;
+			children = (
+				A2301CEC27609B160055FCB9 /* HotSwapTests.swift */,
+			);
+			path = HotSwap;
+			sourceTree = "<group>";
+		};
+		A2301CE8276099DE0055FCB9 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		E11B7909FD6052C4002613D2 /* Frameworks */ = {
@@ -151,6 +177,7 @@
 			children = (
 				A808BB1AD58BE2825B0C2527 /* Pods_HotSwap__iOS_.framework */,
 				DFEFF576F4E27D767C8DE92B /* Pods_HotSwap__macOS_.framework */,
+				3833D30361959B17F34FEC0D /* Pods_HotSwapTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -199,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2301CE6275F756D0055FCB9 /* Build configuration list for PBXNativeTarget "HotSwapTests" */;
 			buildPhases = (
+				EF356A6C0D36F934EB45411D /* [CP] Check Pods Manifest.lock */,
 				A2301CD9275F756C0055FCB9 /* Sources */,
 				A2301CDA275F756C0055FCB9 /* Frameworks */,
 				A2301CDB275F756C0055FCB9 /* Resources */,
+				93542909800EEABC7E2A59DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,6 +259,7 @@
 					};
 					A2301CDC275F756C0055FCB9 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 						TestTargetID = A20C7767264B725000B474D6;
 					};
 				};
@@ -303,6 +333,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		93542909800EEABC7E2A59DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotSwapTests/Pods-HotSwapTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HotSwapTests/Pods-HotSwapTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HotSwapTests/Pods-HotSwapTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DA89A199801BB92158B73ECD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,6 +365,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HotSwap (iOS)/Pods-HotSwap (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF356A6C0D36F934EB45411D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HotSwapTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F7208E9A74662DEE528A5C6D /* [CP] Check Pods Manifest.lock */ = {
@@ -369,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2301CED27609B160055FCB9 /* HotSwapTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +447,7 @@
 /* Begin PBXTargetDependency section */
 		A2301CE3275F756D0055FCB9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = A20C7767264B725000B474D6 /* HotSwap (iOS) */;
 			targetProxy = A2301CE2275F756D0055FCB9 /* PBXContainerItemProxy */;
 		};
@@ -503,6 +574,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P23UWXMRAB;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -526,6 +598,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P23UWXMRAB;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -553,6 +626,7 @@
 				DEVELOPMENT_TEAM = P23UWXMRAB;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
 				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -578,6 +652,7 @@
 				DEVELOPMENT_TEAM = P23UWXMRAB;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
 				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -593,10 +668,13 @@
 		};
 		A2301CE4275F756D0055FCB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9B8DBC8A3CCAEEA177BB312 /* Pods-HotSwapTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P23UWXMRAB;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = HotSwapTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -607,6 +685,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = icandy.zxy.com.HotSwapTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HotSwap.app/HotSwap";
@@ -615,10 +694,13 @@
 		};
 		A2301CE5275F756D0055FCB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0E0DF86312508E1263E292C /* Pods-HotSwapTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P23UWXMRAB;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = HotSwapTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (

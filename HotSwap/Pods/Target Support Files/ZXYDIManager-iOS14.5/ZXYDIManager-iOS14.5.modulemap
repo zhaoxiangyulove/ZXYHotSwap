@@ -1,0 +1,6 @@
+framework module ZXYDIManager {
+  umbrella header "ZXYDIManager-iOS14.5-umbrella.h"
+
+  export *
+  module * { export * }
+}

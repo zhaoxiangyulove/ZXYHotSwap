@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-HotSwapTests/Pods-HotSwapTests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Swinject-iOS14.5/Swinject.framework
+${BUILT_PRODUCTS_DIR}/ZXYDIManager-iOS14.5/ZXYDIManager.framework
+${BUILT_PRODUCTS_DIR}/ZXYModuleC-iOS14.5/ZXYModuleC.framework
+${BUILT_PRODUCTS_DIR}/ZXYModuleProtocols-iOS14.5/ZXYModuleProtocols.framework

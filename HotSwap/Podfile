@@ -38,6 +38,12 @@ target 'HotSwap (iOS)' do
   swapPods
 end
 
+target 'HotSwapTests' do
+  use_frameworks!
+  commonPods
+  swapPods
+end
+
 target 'HotSwap (macOS)' do
   use_frameworks!
 end
