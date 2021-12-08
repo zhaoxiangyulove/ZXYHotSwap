@@ -38,7 +38,3 @@ public struct Injected<Service> {
     mutating set { self = newValue }
   }
 }
-
-//public protocol AutoRegister {
-//  static func autoRegister()
-//}

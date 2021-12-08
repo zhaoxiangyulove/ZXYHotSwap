@@ -40,17 +40,17 @@ final class ViewModel {
 }
 
 struct ContentView: View {
-  @State var vm = ViewModel()
+  @State var viewModel = ViewModel()
   var body: some View {
     VStack {
       Button("moduleA") {
-        vm.printAMsg()
+        viewModel.printAMsg()
       }
       Button("moduleB") {
-        vm.printBMsg()
+        viewModel.printBMsg()
       }
       Button("moduleC") {
-        vm.printCMsg()
+        viewModel.printCMsg()
       }
     }
   }

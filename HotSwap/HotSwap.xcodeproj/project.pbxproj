@@ -194,6 +194,7 @@
 				A20C7765264B725000B474D6 /* Frameworks */,
 				A20C7766264B725000B474D6 /* Resources */,
 				DA89A199801BB92158B73ECD /* [CP] Embed Pods Frameworks */,
+				A220E7D12760ADD2007BC322 /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -349,6 +350,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HotSwapTests/Pods-HotSwapTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		A220E7D12760ADD2007BC322 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		DA89A199801BB92158B73ECD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
