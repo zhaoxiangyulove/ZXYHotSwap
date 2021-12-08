@@ -150,8 +150,10 @@
 		A2301CDE275F756C0055FCB9 /* HotSwapTests */ = {
 			isa = PBXGroup;
 			children = (
-				A2301CE8276099DE0055FCB9 /* Router */,
-				A2301CE7276099C40055FCB9 /* HotSwap */,
+				A2FD0DD42760CC8400BF1005 /* HelperExtensions */,
+				A2FD0DD32760CBD900BF1005 /* HelperClasses */,
+				A2FD0DD22760CBD100BF1005 /* Mocks */,
+				A2FD0DD12760CBA200BF1005 /* Cases */,
 				A2301CE1275F756C0055FCB9 /* Info.plist */,
 			);
 			path = HotSwapTests;
@@ -170,6 +172,36 @@
 			children = (
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		A2FD0DD12760CBA200BF1005 /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				A2301CE8276099DE0055FCB9 /* Router */,
+				A2301CE7276099C40055FCB9 /* HotSwap */,
+			);
+			path = Cases;
+			sourceTree = "<group>";
+		};
+		A2FD0DD22760CBD100BF1005 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A2FD0DD32760CBD900BF1005 /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HelperClasses;
+			sourceTree = "<group>";
+		};
+		A2FD0DD42760CC8400BF1005 /* HelperExtensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HelperExtensions;
 			sourceTree = "<group>";
 		};
 		E11B7909FD6052C4002613D2 /* Frameworks */ = {
