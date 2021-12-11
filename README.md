@@ -7,6 +7,7 @@
 - [ ] TDD 和 Lint 配置。
 - [ ] 接入 Router，实现 module 通信。
 - [ ] 插拔 Module，自动添加 Mock Module，符合测试预期。
+- [ ] 支持源码集成和二进制集成。
 
 #### 结构
 
